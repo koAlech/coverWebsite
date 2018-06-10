@@ -221,6 +221,11 @@ figcaption {
   background-color: #1abc83;
 }
 
+.navigation-link.white.green:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 .navigation-bar {
   background-color: #fff;
 }
@@ -748,10 +753,6 @@ figcaption {
   text-align: center;
 }
 
-.footer-text a{
-  color: #333;
-}
-
 .link {
   display: block;
   margin-bottom: 10px;
@@ -1226,6 +1227,10 @@ figcaption {
   color: #fff;
 }
 
+.bold-text-5:hover {
+  color: #1abc83;
+}
+
 .heading {
   margin-top: 20px;
   color: #b75513;
@@ -1266,6 +1271,10 @@ figcaption {
   bottom: 0px;
   z-index: 1;
   width: 100%;
+}
+
+.link-2 {
+  color: #333;
 }
 
 html.w-mod-js *[data-ix="fade-in-bottom-page-loads"] {
@@ -1665,3 +1674,4 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
     font-size: 57px;
   }
 }
+

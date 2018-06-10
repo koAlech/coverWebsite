@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Sun Jun 10 2018 20:24:38 GMT+0000 (UTC)  -->
-<html data-wf-page="5b0a5fd83624a97a290c67bb" data-wf-site="5b0a5fd83624a95b210c67b8">
+<html data-wf-page="5b0a5fd83624a93a0c0c67bc" data-wf-site="5b0a5fd83624a95b210c67b8">
 <head>
   <meta charset="utf-8">
-  <title>Not Found</title>
-  <meta content="Not Found" property="og:title">
+  <title>Protected page</title>
+  <meta content="Protected page" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -19,11 +19,22 @@
   <link href="images/cover-fav256.png" rel="apple-touch-icon">
 </head>
 <body>
-  <div class="utility-page-wrap"><img src="images/bg-footer.png" srcset="images/bg-footer-p-500.png 500w, images/bg-footer.png 1356w" sizes="100vw" class="image-5">
-    <div class="utility-page-content"><img src="images/Avoid.png" class="image-6">
-      <h2 class="heading">OMG! 404!</h2>
-      <h2 class="heading-2">ֿPage not found</h2>
-      <div class="text-block">The page you are looking for doesn&#x27;t exist or has been moved.</div><a href="#" class="button-2 w-button">Go back home</a></div>
+  <div class="utility-page-wrap">
+    <div class="utility-page-content w-password-page w-form">
+      <form method="post" action="/.wf_auth" class="utility-page-form w-password-page"><img src="https://d3e54v103j8qbb.cloudfront.net/static/password-page-lock.832ca8e2c9.svg">
+        <h2>Protected page</h2>
+        <div class="w-password-page w-embed w-script"><input type="hidden" name="path" value="<%WF_FORM_VALUE_PATH%>"><input type="hidden" name="page" value="<%WF_FORM_VALUE_PAGE%>"></div><input type="password" name="pass" placeholder="Enter your password" maxlength="256" autofocus="true" class="w-password-page w-input"><input type="submit" value="Submit" data-wait="Please wait..." class="w-password-page w-button"></form>
+      <div class="w-password-page w-form-fail">
+        <div>Incorrect password. Please try again.</div>
+      </div>
+      <div style="display:none" class="w-password-page w-embed w-script">
+        <script type="application/javascript">(function _handlePasswordPageOnload() {
+	  if (/[?&]e=1(&|$)/.test(document.location.search)) {
+	    document.querySelector('.w-password-page.w-form-fail').style.display = 'block';
+	  }
+	})()</script>
+      </div>
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
